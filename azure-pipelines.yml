@@ -24,7 +24,7 @@ stages:
       displayName: 'Run npm install'
       inputs:
         verbose: false
-        command: audit fix
+        command: install
 
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
       displayName: 'Compile Sass assets'
